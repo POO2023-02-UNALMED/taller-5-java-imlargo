@@ -20,7 +20,7 @@ public class Anfibio extends Animal {
       listado.add(this);
    }
 
-   public int cantidadAnbifibos() {
+   public static int cantidadAnbifibos() {
       return listado.size();
    }
 

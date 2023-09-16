@@ -1,8 +1,5 @@
 package zooAnimales;
-
 import gestion.Zona;
-import java.util.ArrayList;
-import java.util.List;
 
 public class Animal {
    private static int totalAnimales = 0;
@@ -69,17 +66,17 @@ public class Animal {
    }
 
    public static String totalPorTipo() {
-      int mamiferos = Mamifero.caballos + Mamifero.leones;
-      int aves = Ave.aguilas + Ave.halcones;
-      int reptiles = Reptil.iguanas + Reptil.serpientes;
-      int peces = Pez.bacalaos + Pez.salmones;
-      int anfibios = Anfibio.ranas + Anfibio.salamandras;
+      int mamiferos = Mamifero.cantidadMamiferos();
+      int aves = Ave.cantidadAves();
+      int reptiles = Reptil.cantidadReptiles();
+      int peces = Pez.cantidadPeces();
+      int anfibios = Anfibio.cantidadAnbifibos();
 
       return "Mamiferos: " + mamiferos + "\nAves: " + aves + "\nReptiles: " + reptiles + "\nPeces: " + peces + "\nAnfibios: " + anfibios;
    }
 
    public String toString() {
-      if (this.zona != null) {
+      if (zona != null) {
          return "Mi nombre es " + this.nombre + ", tengo una edad de " + this.edad + ", habito en " + this.habitat + " y mi genero es " + this.genero + ", la zona en la que me ubico es " + this.zona.getNombre() + ", en el " + ((this.zona).getZoo());   
       } else {
          return "Mi nombre es " + this.nombre + ", tengo una edad de " + this.edad + ", habito en " + this.habitat + " y mi genero es " + this.genero;
