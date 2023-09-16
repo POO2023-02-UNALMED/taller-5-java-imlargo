@@ -28,6 +28,10 @@ public class Zoologico {
 		return this.nombre;
 	}
 
+    public String getZona() {
+		return this.zonas;
+	}
+
     public String getUbicacion() {
         return this.ubicacion;
     }
