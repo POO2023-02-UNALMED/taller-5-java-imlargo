@@ -68,7 +68,7 @@ public class Animal {
       this.genero = genero;
    }
 
-   public String totalPorTipo() {
+   public static String totalPorTipo() {
       int mamiferos = Mamifero.caballos + Mamifero.leones;
       int aves = Ave.aguilas + Ave.halcones;
       int reptiles = Reptil.iguanas + Reptil.serpientes;
