@@ -1,8 +1,5 @@
 package gestion;
-
 import java.util.ArrayList;
-import java.util.List;
-
 import zooAnimales.Animal;
 
 public class Zoologico {
@@ -27,10 +24,10 @@ public class Zoologico {
 	public String getNombre() {
 		return this.nombre;
 	}
-
-    public String getZona() {
-		return this.zonas;
-	}
+    
+    public ArrayList<Zona> getZona() {
+        return zonas;
+    }
 
     public String getUbicacion() {
         return this.ubicacion;
