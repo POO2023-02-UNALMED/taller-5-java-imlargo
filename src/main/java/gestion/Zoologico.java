@@ -11,6 +11,8 @@ public class Zoologico {
 	private List<Zona> zonas = new ArrayList<>();
 
 
+    public Zoologico(){}
+
 	public Zoologico(String nombre, String ubicacion){
 		this.nombre = nombre;
 		this.ubicacion = ubicacion;
